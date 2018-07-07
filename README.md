@@ -2,12 +2,25 @@
 
 GNU Emacs 25.3.1
 
-## Requirments
+## Requirements
 - [Cask](https://github.com/cask/cask)
 - [Pandoc](https://pandoc.org)
 - [cmigemo](https://github.com/koron/cmigemo)
 
-### cask
+## Installation
+
+### 1. Clone repo
+
+``` shell
+$ git clone https://github.com/RTewi/.emacs.d.git
+```
+### 2. Make symbolic-link
+
+``` shell
+$ ln -sfv /path/to/repo/.emacs.d $HOME
+```
+
+### 3. Cask
 
 ``` shell
 $ brew install cask # Homebrew
@@ -15,11 +28,13 @@ or
 $ curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
 ```
 
-Add the following to .bashrc (or ,zshrc)
+Add the following to .bashrc (or .zshrc)
 
-``` .bashrc (or .zshrc)
-$ vi .bashrc
+``` shell
 export PATH="$HOME/.cask/bin:$PATH"
+```
+
+```
 $ source ~/.bashrc
 ```
 
@@ -29,7 +44,7 @@ $ cd ~/.emacs.d
 $ cask
 ```
 
-### 3rd-party
+### 4. 3rd-party
 
 ``` shell
 $ brew install pandoc cmigemo llvm # Homebrew
@@ -37,7 +52,7 @@ or
 $ sudo apt install pandoc cmigemo llvm-dev clang libclang-dev cmake # Ubuntu
 ```
 
-### codic
+### 5. codic
 
 Get codic API token from [codic](https://codic.jp/)
 
